@@ -3,25 +3,186 @@
     font-family: 'Raleway', sans-serif;
 }
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 60px;
+}
+
+.logo-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.activities-link {
+    margin-left: 50px;
+}
+
+.link:hover {
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
 }
 
 .fa-solid {
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
+.place-container .fa-solid{
+    padding: 20px;
+    height: 10px;
+    border-style: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef0f0;
+}
+
+form {
+    display:flex;
+    flex-direction: row;
+    width: 20px;
+    height: 50px;
+}
+
+input {
+    padding: 0px 15px;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#name-of-button {
+    color:white;
+    background-color: #0065FC;
+    font-weight: bold;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    padding: 0px 25px;
+}
+
+#name-of-button:hover {
+    background-color: #265295;
+}
+
+.filt {
+    margin-bottom: -15px;
+}
+
+#filter {
+    font-weight: bold;
+}
+
+.fa-fire, .fa-heart, .fa-person, .fa-money-bill-wave {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#economic {
+    padding: 10px 30px;
+    margin: 20px 3px 20px 15px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: 3px solid rgb(223, 223, 223);
+    border-radius: 50px 50px 50px 50px;
+}
+
+#economic:hover {
+    background-color: #b7dafd;
+}
+
+#family {
+    padding: 10px 30px;
+    margin: 20px 3px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: 3px solid rgb(223, 223, 223);
+    border-radius: 50px 50px 50px 50px;
+}
+
+#family:hover {
+    background-color: #b7dafd;
+}
+
+#romantic {
+    padding: 10px 30px;
+    margin: 20px 3px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: 3px solid rgb(223, 223, 223);
+    border-radius: 50px 50px 50px 50px;
+}
+
+#romantic:hover {
+    background-color: #b7dafd;
+}
+
+#our-nuggets {
+    padding: 10px 30px;
+    margin: 20px 3px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: 3px solid rgb(223, 223, 223);
+    border-radius: 50px 50px 50px 50px;
+}
+
+#our-nuggets:hover {
+    background-color: #b7dafd;
+}
+
+.fa-info {
+    color: #0065FC;
+    border: 1px solid #cfcdcd;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.info-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #ffdede;
+}
+
 body {
     display: flex;
     justify-content: center;
+    margin: 1px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 50px ;
     box-sizing: border-box;
 }
 
@@ -71,12 +232,65 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/************* Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hebergements-card {
+    width: 240px;
+    height: 200px;
+    margin-top: 33px;
+}
+
+.hebergements-card > img {
+    width: 100%;
+    height: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.hebergements-card-title {
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.hebergements-card-content {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.hebergements-card-subtitle {
+    margin: 0px;
+    padding-top: 3px;
+}
+
+.hebergements-card-rating {
+    margin-top: 7px;
+}
+
+.display-link {
+    font-weight: bold;
+}
+
+#d-l {
+    margin-top: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+/*********** Populaires ***********/
 .populaires {
     width: 32%;
 }
@@ -121,7 +335,56 @@ a {
     margin-bottom: 5px;
 }
 
+/************ Activities ***********/
+.activities {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.activities-title {
+    margin-bottom: 20px;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities-card {
+    box-shadow: 0 8px 2px -2px rgb(246, 246, 246);
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-card > img {
+    width: 100%;
+    height: 390px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.activities-card-title {
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #eef0f0;
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -158,6 +421,54 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .filt > button {
+        font-size: 12px !important;
+    }
+
+    .fa-fire, .fa-heart, .fa-person, .fa-money-bill-wave {
+        padding-right: 8px;
+        font-size: 12px;
+    }
+
+    .hebergements-card {
+        width: 240px;
+        height: 150px;
+        margin-top: 33px;
+    }
+
+    .hebergements-card > img {
+        width: 100%;
+        height: 65px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .hebergements-card-content > p {
+        font-size: 12px;
+    }
+    
+    .hebergements-card-title {
+        margin-top: 4px;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .activities-card {
+        box-shadow: 0 8px 2px -2px rgb(246, 246, 246);
+        border-radius: 10px;
+        height: 300px;
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .activities-card > img {
+        width: 100%;
+        height: 220px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
 }
 
