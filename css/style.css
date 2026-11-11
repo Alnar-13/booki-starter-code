@@ -54,8 +54,9 @@ nav > a {
     gap: 8px;
 }
 
-.text > h3 {
+.text > h1 {
     margin: 0;
+    font-size: 1.17em;
 }
 
 .text > p {
@@ -272,8 +273,8 @@ a {
 }
 
 .hebergements-card {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    width: calc(100% - 10px); /*L'élément aura une largeur égale à celle de son conteneur parent, diminuée de 10 pixels*/
+    height: calc(100% - 10px); /*L'élément aura une hauteur égale à celle de son conteneur parent, diminuée de 10 pixels*/
 }
 
 .hebergements-card > img {
